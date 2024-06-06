@@ -1,0 +1,75 @@
+
+
+<div class="background">
+
+    <div class="container" style="margin-top: 5vh;">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkeoRpRTKC6abm9uiW-Omy9E35XY35SnwVQ&s" alt>                
+            </div>            
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Login</div>
+                    <form [formGroup]="loginForm">
+                        <div class="input-boxes">
+                            <div class="input-box"
+                                [class.error]="loginForm.controls['email'].dirty && loginForm.hasError('required', 'email')">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email"
+                                    placeholder="Enter your email"
+                                    formControlName="email" required>
+                            </div>
+                            <small class="text-danger"
+                                *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required', 'email')">*Email
+                                is required</small>
+
+                            <div class="input-box"
+                                [class.error]="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')">
+                                <i class="fas fa-lock"></i>
+                                <input
+                                    type="{{ showPassword ? 'text' : 'password' }}"
+                                    placeholder="Enter your password"
+                                    formControlName="password" required>
+                            </div>
+                            <small class="text-danger"
+                                *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')">*Password
+                                is required</small>
+
+                            <input type="checkbox"
+                                (change)="togglePasswordVisibility()"
+                                style="margin-top: -1vh; margin-bottom: 2vh;" />
+                            Show Password
+
+                            <div class="text">
+                                <!-- <a data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password?</a> -->
+                                <a (click)="Start()"
+                                    style="cursor: pointer; color: #06BBCC;">Forgot
+                                    password?</a>
+                                </div>
+                            <div class="button input-box">
+                                <input type="submit" (click)="onLogin()"
+                                    value="Sumbit">
+                            </div>
+                            <a routerLink="/homepage/signup">
+                                <div class="text sign-up-text">Don't have an
+                                    account? <label> Sigup
+                                        now</label></div>
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <div class="container"> --> 
+
+     
+
+</div>

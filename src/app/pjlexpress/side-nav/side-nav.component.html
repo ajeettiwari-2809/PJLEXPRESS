@@ -1,0 +1,169 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar" *ngIf="false">
+    <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
+      <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/logo/prism.png" alt="logo" /></a>
+      <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+    </div>
+    <ul class="nav">
+      <li class="nav-item nav-profile">
+        <a href="#" class="nav-link">
+          <div class="nav-profile-image">
+            <img src="assets/images/faces/face1.jpg" alt="profile" />
+            <span class="login-status online"></span>
+            <!--change to offline or busy as needed-->
+          </div>
+          <div class="nav-profile-text d-flex flex-column pr-3">
+            <span class="font-weight-medium mb-2">Ajeet Tiwari</span>
+            <span class="font-weight-normal">IT </span>
+          </div>
+          <span class="badge badge-danger text-white ml-3 rounded">3</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/dashboardScreens']">
+          <i class="mdi mdi-home menu-icon"></i>
+          <span class="menu-title">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <i class="mdi mdi-currency-usd menu-icon"></i>
+
+          <span class="menu-title">Sales</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link"[routerLink]="['/salesmoduleScreens']">Help</a>  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/ui-features/dropdowns.html">Issues</a>
+            </li>
+           
+          </ul>
+        </div>
+      </li>
+
+
+      <!-- Purchase &  -->
+
+
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basicPurchase" aria-expanded="false" aria-controls="ui-basic">
+          <i class="mdi mdi-currency-usd menu-icon"></i>
+
+          <span class="menu-title">Purchase & Inventory</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basicPurchase">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link"[routerLink]="['/salesmoduleScreens']">Plant & Mentinance</a>  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/ui-features/dropdowns.html">Finance</a>
+            </li>
+           
+          </ul>
+        </div>
+      </li>
+
+      <!-- plant & mentinancrs -->
+      
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basicPlant" aria-expanded="false" aria-controls="ui-basic">
+          <i class="mdi mdi-currency-usd menu-icon"></i>
+
+          <span class="menu-title">Plant & Mentinance</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basicPlant">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link"[routerLink]="['/salesmoduleScreens']">Plant & Mentinance</a>  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/ui-features/dropdowns.html">Finance</a>
+            </li>
+           
+          </ul>
+        </div>
+      </li>
+
+
+     
+      <li class="nav-item sidebar-actions">
+        <div class="nav-link">
+          <div class="mt-4">
+            <div class="border-none">
+              <p class="text-black">Notification</p>
+            </div>
+            <ul class="mt-4 pl-0">
+              <li>Sign Out</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+
+  <nav class="sidebar sidebar-offcanvas" id="sidebar" >
+    <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
+      <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/logo.jpg" alt="logo" /></a>
+      <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+    </div>
+    <ul class="nav">
+      <li class="nav-item nav-profile">
+        <a href="#" class="nav-link">
+          <div class="nav-profile-image">
+            <img src="assets/images/faces/face1.jpg" alt="profile" />
+            <span class="login-status online"></span>
+            <!--change to offline or busy as needed-->
+          </div>
+          <div class="nav-profile-text d-flex flex-column pr-3">
+            <span class="font-weight-medium mb-2">Ajeet Tiwari</span>
+            <span class="font-weight-normal">IT</span>
+          </div>
+          <span class="badge badge-danger text-white ml-3 rounded">3</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/dashboardScreens']">
+          <i class="mdi mdi-home menu-icon"></i>
+          <span class="menu-title">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+          <span class="menu-title">Sales Modules</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link"[routerLink]="['/salesmoduleScreens']">Customer Creations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/ui-features/dropdowns.html">Customer Updations</a>
+            </li>
+            
+          </ul>
+        </div>
+      </li>
+     
+      <li class="nav-item sidebar-actions">
+        <div class="nav-link">
+          <div class="mt-4">
+            <div class="border-none">
+              <p class="text-black">Notification</p>
+            </div>
+            <ul class="mt-4 pl-0">
+              <li>Sign Out</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>

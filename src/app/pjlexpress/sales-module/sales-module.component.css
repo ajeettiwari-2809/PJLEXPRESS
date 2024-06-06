@@ -1,0 +1,16 @@
+.mb-0.color-card-head {
+    background-color: rgb(109, 109, 174);
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.mb-0.color-card-head:hover {
+    background-color: darkblue;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+
